@@ -1,2 +1,2 @@
-# spring
-spring study
+# spring_exercise
+spring exercise
