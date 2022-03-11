@@ -1,2 +1,2 @@
-# spring_exercise
-spring exercise
+# node.js_exercise
+node.js exercise
