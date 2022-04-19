@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <title>To Do List</title>
+  <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+<nav>
+  <a href="/">HOME</a>
+  <a href="/about">ABOUT</a>
+</nav>
+<!-- 해야할 일 입력 후 ADD 버튼을 누르면 전체 To Do List가 업데이트 되어 출력 -->
+<div class="container">
+  <h2>To Do List</h2>
+  <hr>
+  <br>
+  <form id="form">
+    <input type="text" id="username">
+    <button type="submit">ADD</button>
+  </form>
+  <br>
+<div id="list"></div>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./main.js"></script>
+</div>
+
+</body>
+</html>
