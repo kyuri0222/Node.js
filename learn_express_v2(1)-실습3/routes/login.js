@@ -19,20 +19,17 @@ router.post('/admit',(req,res)=> {
   console.log(login,password);
 
   if (login =='guest'&& password == '7777'){
-    res.cookie('admit',true, {
-      // expires:new Date(Date.now()+3000),
+    res.cookie('admit',true,{
+      expires:new Date(Date.now()+3000),
       httpOnly:true,
       secure:false,
       path:'/',
       signed: true,
     });
-    res.clearCookie('admit',true,{
-      httpOnly:true,
-      path:'/',
-    });
     res.redirect('/');
   } else {
-    res.redirect('/login')
+    res.redirect('/login');
   }
   });
+
 module.exports = router;
